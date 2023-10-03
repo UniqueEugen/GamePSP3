@@ -18,6 +18,7 @@ public class Main {
         Quest syberia = new Quest(12,8.2F,"Windows",2004, "Syberia");
         Quest neverhood = new Quest(8,8.7F,"Windows",2005, "NEVERHOOD");
         Strategy civilizationVI = new Strategy(4,1000,true,9.0F,"Windows",2016, "Civilization VI");
+        Strategy XCOM2 = new Strategy(30,6,false,9.3F,"Windows",2015, "X-COM 2");
         Printer.printQuest(syberia);
         Printer.printShooter(doom);
         Printer.printStrategi(civilizationVI);
