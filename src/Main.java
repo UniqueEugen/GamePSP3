@@ -1,17 +1,26 @@
+import game.Quest;
+import game.Shooter;
+import game.Strategy;
+import printers.Printer;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Shooter doom = new Shooter();
+        doom.setName("Doom");
+        doom.setOs("Any");
+        doom.setYearOfReleaze(1993);
+        doom.setRating(8.5F);
+        doom.setWeapon("Gun");
+        doom.setLevels(100);
+        Shooter ss = new Shooter(100,8,"Windows",2001,"gun", "Serious Sam");
+        Quest syberia = new Quest(12,8.2F,"Windows",2004, "Syberia");
+        Quest neverhood = new Quest(8,8.7F,"Windows",2005, "NEVERHOOD");
+        Strategy civilizationVI = new Strategy(4,1000,true,9.0F,"Windows",2016, "Civilization VI");
+        Printer.printQuest(syberia);
+        Printer.printShooter(doom);
+        Printer.printStrategi(civilizationVI);
+        Printer.printShooter(ss);
     }
 }
